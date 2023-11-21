@@ -1,0 +1,619 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#section1{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    /* background-size: cover; */
+    position: relative;
+    background: rgba(2, 2, 64, 0.8);
+}
+#section1::before{
+    content: "";
+    background-image: url(slider-bg.jpg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} 
+#listbtn{
+    display: none;
+}
+.menu{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: none;
+}
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 2px 8px;
+    color: white;
+}
+.head1{
+    font-size: 22px;
+    margin-top: 10px;
+}
+.checklist input{
+    margin-left: 45px;
+}
+.checklist{
+    font-size: 18px;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    margin-top: 95px; 
+    /* display: flex; */
+    text-align: center;
+}
+#head1-options{
+    margin-top: 20px;
+}
+#head1-options  li {
+    display: inline;
+    padding-left: 28px;
+    padding-right: 9px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+#head1-options li a:hover{
+    color: rgb(246, 49, 49);
+}
+.block1{
+    padding-top: 60px;
+    text-align: center;
+}
+.block1 h1{
+    
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.block1 p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.input{
+    margin-top: 44px;
+}
+
+
+.block1 button{
+    padding: 11px 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(220, 28, 28);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 44px;
+}
+.block1 button:hover{
+    background-color: transparent;
+    color: rgb(220, 28, 28);
+    border-color: rgb(220, 28, 28);
+}
+.row{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+.row div{
+    padding-left: 8px;
+}
+.dropdown input{
+    color: black;
+    padding: 5px 28px 8px 1px;
+    border: 1px solid black;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+}
+.dropdown1{
+    padding: 8px 98px 8px 1px;
+    color: gray;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.dropdown2{
+    padding: 8px 72px 8px 1px;
+    color: grey;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.input1{
+    display: none;
+}
+
+.block2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    /* height: auto; */
+    /* background-color: rgb(220, 28, 28); */
+}
+.block2 .box{
+    width: 33.33%;
+}
+.box{
+    background-color: rgb(225, 30, 30);
+    
+}
+.box div{
+     margin-left: 40px;
+     padding-left: 90px;
+}
+.block2 div{
+  width: 28%;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgb(153, 8, 8);
+    opacity: 5px;
+    transition: all .5s;
+}
+.block2 img{
+    width: 60%;
+}
+.block2 h5{
+    padding-bottom: 14px;
+    color: white;
+    font-size: 20px;
+}
+.block3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    
+}
+.block3-1{
+    padding-top: 10px;
+}
+.block3 h1{
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+.block3 p {
+    font-size: 20px;
+    margin-top: 8px;
+    
+}
+.block3 img{
+     width: 80%;
+     height: 90%;
+     border-radius: 15px;
+}
+.block3 button{
+    padding: 12px 46px;
+    margin-top: 18px;
+    margin-bottom: 5px;
+    background-color: rgb(20, 20, 94);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.block3 button:hover{
+    color: rgb(20, 20, 94);
+    background-color: transparent;
+    border: 1px solid rgb(20, 20, 94);
+    transition: all 0.3s;
+    
+}
+
+#section3{
+    background-color: rgb(20, 20, 94);
+    color: white;
+}
+.block4 h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 35px;
+}
+.block4-h2{
+    padding-left: 40px;
+}
+.job-tag{
+    border: 1px solid #a4a4a4;
+    border-radius: 6px;
+    display: flex;
+    width: 35%;
+    padding: 35px;
+    margin: 25px 15px 25px 4px;
+    position: relative;
+}
+.job-tag img{
+    background-color: whitesmoke;
+    width: 60%;
+    padding: 10px;
+}
+.recent-job-tag{
+    border: 1px solid #a4a4a4;
+    border-radius: 6px;
+    display: flex;
+    width: 35%;
+    margin: 22px 10px 9px 5px;
+    padding: 35px;
+    position: relative;
+}
+.recent-job-tag img{
+    background-color: whitesmoke;
+    width: 60%;
+    padding: 10px;
+}
+.block4-1-1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+.block4-1-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+
+    
+}
+.tag1{
+    padding-left: 40px;
+    margin-bottom: 60px;
+    
+}
+.job-tag button{
+    margin-top: 18px;
+    position: absolute;
+    bottom: 18px;
+    right: 95px;
+    background-color: rgb(44, 44, 158);
+    padding: 11px 18px;
+    color: white;
+    font-size: 16px;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.recent-job-tag button{
+    background-color: rgb(44, 44, 158);
+    padding: 11px 18px;
+    color: white;
+    font-size: 16px;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 18px;
+    right: 95px;
+
+}
+.job-tag button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(116, 116, 154);
+    transition: all 0.1s;
+}
+.recent-job-tag button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(116, 116, 154);
+    transition: all 0.1s;
+}
+.job-tag{
+    position: relative;
+}
+.job-tag i{
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.job-tag i:hover{
+    color: rgb(246, 49, 49);
+    transition: all 0.3s;
+}
+.recent-job-tag{
+    position: relative;
+}
+.recent-job-tag i{
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.recent-job-tag i:hover{
+    color: rgb(246, 49, 49);
+    transition: all 0.3s;
+}
+.block4 .btn{
+    padding: 11px 32px;
+    background-color: rgb(220, 28, 28);
+    color: white;
+    border-radius: 8px;
+    border: 1px solid red;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.block4 .btn:hover{
+    background-color: transparent;
+    color: rgb(246, 49, 49);
+    border: 1px solid rgb(246, 49, 49);
+}
+.btn1{
+    text-align: center;
+}
+.block5{
+    display: flex;
+    margin-left: 45px;
+    margin-right: 45px;
+    justify-content: space-around;
+}
+.block5-class {
+    margin-left: 8px;
+}
+.block5 img{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+#section4{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+#section4 h1{
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-size: 34px;
+    font-weight: bold;
+}
+.para1{
+    font-size: 20px;
+    text-align: center;
+    /* margin-left: 10px; */
+    padding-bottom: 25px;
+}
+.block5-1{
+    display: flex;
+    padding-left: 7px;
+    font-size: 18px;
+    padding-bottom: 6px;
+}
+.blog{
+    border: 1px solid black;
+    margin: 32px;
+    border-radius: 12px;
+    background-color:#030d47;
+    color: whitesmoke;
+}
+.blog h3{
+    font-size: 20px;
+    padding-left: 12px;
+    padding-bottom: 5px;
+}
+.blog p{
+    padding-left: 6px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.blog-btn{
+    text-align: center;
+    
+}
+.blog-btn button{
+    padding: 11px 36px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(225, 30, 30);
+    border-radius: 4px;
+    border-color: transparent;
+    font-size: 18px;
+}
+.blog-btn button:hover{
+    background-color: white;
+    color: rgb(220, 28, 28);
+    transition: all 0.3s;
+    border: 1px soild;
+    border-color: rgb(225, 30, 30);
+}
+#section5{
+    background-color: #030d47;
+    color: whitesmoke;
+    font-size: 18px;
+    padding: 45px;
+}
+.block6{
+    display: flex;
+    justify-content: space-around;
+
+}
+.block6 h1{
+    margin-bottom: 20px;
+}
+.head2{
+    padding-bottom: 25px;
+}
+.link i{
+   padding: 10px;
+   margin-left: 4px;
+   color: #030d47;
+   background-color: whitesmoke;
+   border-radius: 22%;
+   cursor: pointer;
+   height: 20px;
+    width: 21px;
+    text-align: center;
+}
+.link i:hover{
+    background-color: transparent;
+    color: #f2f3fa;
+    transition: all 0.4s;
+}
+.head3 input{
+    padding: 9px 95px 9px 2px;
+}
+.head3 h1{
+    padding-bottom: 24px;
+}
+.head3 button{
+    padding: 8px 16px;
+    margin-top: 15px;
+    background-color: rgb(225, 30, 30);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+.head3 button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(220, 28, 28);
+    transition: all 0.3s;
+    color: rgb(220, 28, 28);
+}
+@media screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #section1{
+        height: auto;
+    }
+    #listbtn button{
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+    .header-main{
+        justify-content: space-between;
+    }
+    #listbtn i{
+        padding: 5px;
+    }
+    .head1 h2{
+        margin-top: 0px;
+    }
+    #listbtn{
+        display: block;
+    }
+    #closemark{
+        display: none;
+    }
+    #head1-options{
+        display: none;
+    }
+
+    nav ul{
+        width: 40%;
+        background: transparent;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        
+    }
+    #head1-options  li{
+        display: block;
+    }
+    #head1-options{
+        margin-top: 10px;
+        padding-top: 5px;
+    
+    }
+
+    nav ul li{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    nav ul li a{
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    #head1-options{
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    .block1 button{
+        text-align: center;
+       margin-right: 35px;
+       margin-top: 20px;
+    }
+    .block1 h1{
+        margin-top: 40px;
+    }
+    .block1 input{
+        /* display:block; */
+        margin-bottom: 2px;
+        /* margin-left: 88px; */
+    }
+    .row {
+        display: block;
+    }
+    .row div{
+        margin-top: 19px;
+    }
+    
+    .checklist input{
+        /* display: block; */
+        margin-bottom: 35px;
+        margin-left: 0px;
+        padding-left: 1px;
+    
+    }
+    .block2{
+        display: block;
+    
+    }
+    
+    .block2 .box{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .box div{
+        margin-left: 65px;
+    }
+    .block3{
+        display: block;
+        margin-left: 8px;
+    }
+    .job-tag{
+        width: 80%;
+    }
+    .job-tag img{
+        width: 60%;
+    }
+    .recent-job-tag{
+        width: 80%;
+    }
+    .block5{
+        display: block;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .block6{
+        display: block;
+    }
+    .block6-1{
+        padding-bottom: 40px;
+    }
+    .block6 h1{
+        margin: 0;
+    }
+    
+}
